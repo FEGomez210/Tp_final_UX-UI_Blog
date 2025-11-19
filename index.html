@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Isla - Inicio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo-diario.svg" alt="Logo Diario La Isla" class="brand__logo" />
+        <div class="brand__text">
+          <span class="brand__name">La Isla</span>
+          <span class="brand__tagline">Diario La Isla · Noticias de Concepción del Uruguay y la región</span>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="main-nav__link main-nav__link--active">Inicio</a>
+        <a href="blogs.html" class="main-nav__link">Noticias</a>
+        <a href="perfi.html" class="main-nav__link">Sobre el diario</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Edición local</p>
+          <h1 class="hero__title">La noticia de tu ciudad, sin ruido.</h1>
+          <p class="hero__subtitle">
+            Cobertura cercana de lo que pasa en Concepción del Uruguay: cultura, sociedad, deportes,
+            política y la vida a orillas del río.
+          </p>
+
+          <div class="hero__meta">
+            <div class="meta-item">
+              <img src="assets/icono-ubicacion.svg" alt="" class="meta-item__icon" />
+              <span>Concepción del Uruguay, Entre Ríos</span>
+            </div>
+            <div class="meta-item">
+              <img src="assets/icono-reloj.svg" alt="" class="meta-item__icon" />
+              <span>Actualizado cada mañana</span>
+            </div>
+          </div>
+
+          <div class="hero__actions">
+            <a href="blogs.html#ultimas" class="btn btn--primary">Ver últimas noticias</a>
+            <a href="perfi.html" class="btn btn--ghost">Conocer la redacción</a>
+          </div>
+        </div>
+
+        <div class="hero__image">
+          <img
+            src="assets/portada-ciudad.svg"
+            alt="Ilustración de la ciudad y el río"
+          />
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" id="ultimas">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Últimas noticias</h2>
+          <a href="blogs.html" class="section__link">Ver todas las notas</a>
+        </div>
+
+        <div class="news-grid">
+         
+          <article class="news-card">
+            <img
+              src="assets/noticia-rio.svg"
+              alt="Ilustración del río y un muelle"
+              class="news-card__image"
+            />
+            <div class="news-card__body">
+              <span class="badge badge--category">Sociedad</span>
+              <h3 class="news-card__title">
+                <a href="detalle-blog.html">El río vuelve a ser protagonista del verano</a>
+              </h3>
+              <p class="news-card__excerpt">
+                Balnearios, costas y vida al aire libre: cómo se prepara la ciudad para la temporada
+                estival 2025.
+              </p>
+              <div class="news-card__meta">
+                <span class="meta-item">
+                  <img src="assets/icono-relog.svg" alt="" class="meta-item__icon" />
+                  Hace 2 h
+                </span>
+                <span class="meta-item">
+                  <img src="assets/icono-ubicacion.svg" alt="" class="meta-item__icon" />
+                  Zona Costanera
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img
+              src="assets/noticia-fiesta.svg"
+              alt="Ilustración de personas celebrando"
+              class="news-card__image"
+            />
+            <div class="news-card__body">
+              <span class="badge badge--category badge--accent">Cultura</span>
+              <h3 class="news-card__title">
+                <a href="detalle-blog.html">Agenda confirmada para el carnaval local</a>
+              </h3>
+              <p class="news-card__excerpt">
+                Comparsas, fechas claves y novedades de la fiesta que pone a la ciudad en el mapa
+                turístico nacional.
+              </p>
+              <div class="news-card__meta">
+                <span class="meta-item">
+                  <img src="assets/icono-reloj.svg" alt="" class="meta-item__icon" />
+                  Hace 5 h
+                </span>
+                <span class="meta-item">
+                  <img src="assets/icono-ubicacion.svg" alt="" class="meta-item__icon" />
+                  Corsódromo local
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img
+              src="assets/noticia-rio.svg"
+              alt="Ilustración de un estadio deportivo"
+              class="news-card__image"
+            />
+            <div class="news-card__body">
+              <span class="badge badge--category badge--soft">Deportes</span>
+              <h3 class="news-card__title">
+                <a href="detalle-blog.html">El clásico del litoral se juega el domingo</a>
+              </h3>
+              <p class="news-card__excerpt">
+                Los clubes locales se disputan un partido clave con tribunas completas y operativo
+                especial de seguridad.
+              </p>
+              <div class="news-card__meta">
+                <span class="meta-item">
+                  <img src="assets/icono-reloj.svg" alt="" class="meta-item__icon" />
+                  Ayer
+                </span>
+                <span class="meta-item">
+                  <img src="assets/icono-ubicacion.svg" alt="" class="meta-item__icon" />
+                  Estadio Municipal
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="container newsletter">
+        <div class="newsletter__text">
+          <h2 class="section__title">Suscribite al resumen diario</h2>
+          <p>
+            Recibí cada mañana un correo con las tres noticias más importantes de la ciudad,
+            seleccionadas por nuestra redacción.
+          </p>
+        </div>
+        <form class="newsletter__form">
+          <label class="field">
+            <span class="field__label">Correo electrónico</span>
+            <input type="email" class="field__input" placeholder="tu@correo.com" required />
+          </label>
+          <label class="field">
+            <span class="field__label">Frecuencia</span>
+            <select class="field__input">
+              <option>Diaria</option>
+              <option>Semanal</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn--primary">Quiero recibir noticias</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+    <section class="section contact" id="contacto">
+      <div class="container contact__inner">
+        <div class="contact__social">
+          <p><strong>Síguenos</strong></p>
+          <ul class="social-list">
+            <li class="social-item"><a href="#" aria-label="LinkedIn"><img src="assets/icon-linkedin.svg" alt="LinkedIn" class="social-icon"/> <span>LinkedIn</span></a></li>
+            <li class="social-item"><a href="#" aria-label="Facebook"><img src="assets/icon-facebook.svg" alt="Facebook" class="social-icon"/> <span>Facebook</span></a></li>
+            <li class="social-item"><a href="#" aria-label="Twitter"><img src="assets/icon-twitter.svg" alt="Twitter" class="social-icon"/> <span>Twitter</span></a></li>
+            <li class="social-item"><a href="#" aria-label="Instagram"><img src="assets/icon-instagram.svg" alt="Instagram" class="social-icon"/> <span>Instagram</span></a></li>
+          </ul>
+        </div>
+
+        <div class="contact__content">
+          <h2 class="section__title">Contacto</h2>
+          <p>Autor: <strong>Fernando Emilio Gómez</strong></p>
+          <p>Gmail personal: <a href="mailto:fernandogm795@gmail.com">fernandogm795@gmail.com</a></p>
+          <p>Gmail del diario: <a href="mailto:diario.laisla@gmail.com">diario.laisla@gmail.com</a></p>
+
+          <h3 class="section__title">Contacto rápido</h3>
+          <p>¿Querés escribirnos? Usá los correos arriba o enviá un mensaje por nuestras redes sociales.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <div>
+          <p>© 2025 Diario La Isla. Todos los derechos reservados.</p>
+          <p class="footer__small">Contacto: Autor: Fernando Emilio Gómez · <a href="mailto:fernandogm795@gmail.com">fernandogm795@gmail.com</a></p>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

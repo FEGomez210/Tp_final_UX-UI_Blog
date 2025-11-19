@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Isla - Noticias</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo-diario.svg" alt="Logo Diario La Isla" class="brand__logo" />
+        <div class="brand__text">
+          <span class="brand__name">La Isla</span>
+          <span class="brand__tagline">Diario La Isla · Noticias de Concepción del Uruguay y la región</span>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="main-nav__link">Inicio</a>
+        <a href="blogs.html" class="main-nav__link main-nav__link--active">Noticias</a>
+        <a href="perfi.html" class="main-nav__link">Sobre el diario</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header" id="ultimas">
+      <div class="container">
+        <h1 class="page-header__title">Noticias</h1>
+        <p class="page-header__subtitle">
+          Seleccioná la categoría que te interese o recorré el listado completo de notas recientes.
+        </p>
+
+        <div class="chips">
+          <button class="chip chip--active" type="button">Todas</button>
+          <button class="chip" type="button">Sociedad</button>
+          <button class="chip" type="button">Cultura</button>
+          <button class="chip" type="button">Deportes</button>
+          <button class="chip" type="button">Política</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container layout layout--two-columns">
+        <div class="layout__main">
+          <!-- Noticia 1 -->
+          <article class="news-row">
+            <img
+              src="assets/noticia-rio.svg"
+              alt="Ilustración del río y la costanera"
+              class="news-row__image"
+            />
+            <div class="news-row__body">
+              <span class="badge badge--category">Sociedad</span>
+              <h2 class="news-row__title">
+                <a href="detalle-blog.html">El río vuelve a ser protagonista del verano</a>
+              </h2>
+              <p class="news-row__excerpt">
+                Con la llegada del calor, vecinos y turistas se acercan a las playas locales. 
+                Te contamos cómo estará organizado el operativo de seguridad y limpieza.
+              </p>
+              <div class="news-row__meta">
+                <span>Hace 2 h · Redacción La Isla</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Noticia 2 -->
+          <article class="news-row">
+            <img
+              src="assets/noticia-fiesta.svg"
+              alt="Ilustración de personas bailando en carnaval"
+              class="news-row__image"
+            />
+            <div class="news-row__body">
+              <span class="badge badge--category badge--accent">Cultura</span>
+              <h2 class="news-row__title">
+                <a href="detalle-blog.html">Carnaval: confirman esquema de entradas anticipadas</a>
+              </h2>
+              <p class="news-row__excerpt">
+                El ente organizador publicó el cronograma de venta y los valores iniciales de las
+                localidades para la próxima temporada.
+              </p>
+              <div class="news-row__meta">
+                <span>Ayer · Redacción Cultura</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Noticia 3 -->
+          <article class="news-row">
+            <img
+              src="assets/noticia-rio.svg"
+              alt="Ilustración de estadio deportivo"
+              class="news-row__image"
+            />
+            <div class="news-row__body">
+              <span class="badge badge--category badge--soft">Deportes</span>
+              <h2 class="news-row__title">
+                <a href="detalle-blog.html">Clásico del litoral: recomendaciones para hinchas</a>
+              </h2>
+              <p class="news-row__excerpt">
+                Horarios de apertura del estadio, accesos, ingresos diferenciados y objetos no 
+                permitidos para garantizar una jornada tranquila.
+              </p>
+              <div class="news-row__meta">
+                <span>Hace 3 días · Deportes La Isla</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Noticia 4 -->
+          <article class="news-row">
+            <img
+              src="assets/noticia-fiesta.svg"
+              alt="Ilustración de barrio y casas"
+              class="news-row__image"
+            />
+            <div class="news-row__body">
+              <span class="badge badge--category">Política</span>
+              <h2 class="news-row__title">
+                <a href="detalle-blog.html">Presupuesto participativo: barrios que presentaron proyectos</a>
+              </h2>
+              <p class="news-row__excerpt">
+                Vecinos de distintos puntos de la ciudad impulsan propuestas en iluminación, 
+                espacios verdes y actividades culturales.
+              </p>
+              <div class="news-row__meta">
+                <span>Hace 1 semana · Sección Política</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <aside class="layout__aside">
+          <div class="card card--aside">
+            <h3 class="card__title">Lo más leído</h3>
+            <ul class="simple-list">
+              <li><a href="detalle-blog.html">Cinco paseos gratuitos para hacer este fin de semana</a></li>
+              <li><a href="detalle-blog.html">Cómo afectará el nuevo cuadro tarifario a la zona</a></li>
+              <li><a href="detalle-blog.html">Guía rápida para disfrutar del carnaval local</a></li>
+            </ul>
+          </div>
+
+          <div class="card card--aside">
+            <h3 class="card__title">Boletín del río</h3>
+            <p class="card__text">
+              Estado del río, pronóstico extendido y alertas climáticas en un solo correo semanal.
+            </p>
+            <a href="index.html#ultimas" class="btn btn--ghost btn--full">Suscribirme</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+    <section class="section contact" id="contacto">
+      <div class="container contact__inner">
+        <div class="contact__social">
+          <p><strong>Síguenos</strong></p>
+          <ul class="social-list">
+            <li class="social-item"><a href="#" aria-label="LinkedIn"><img src="assets/icon-linkedin.svg" alt="LinkedIn" class="social-icon"/> <span>LinkedIn</span></a></li>
+            <li class="social-item"><a href="#" aria-label="Facebook"><img src="assets/icon-facebook.svg" alt="Facebook" class="social-icon"/> <span>Facebook</span></a></li>
+            <li class="social-item"><a href="#" aria-label="Twitter"><img src="assets/icon-twitter.svg" alt="Twitter" class="social-icon"/> <span>Twitter</span></a></li>
+            <li class="social-item"><a href="#" aria-label="Instagram"><img src="assets/icon-instagram.svg" alt="Instagram" class="social-icon"/> <span>Instagram</span></a></li>
+          </ul>
+        </div>
+
+        <div class="contact__content">
+          <h2 class="section__title">Contacto</h2>
+          <p>Autor: <strong>Fernando Emilio Gómez</strong></p>
+          <p>Gmail personal: <a href="mailto:fernandogm795@gmail.com">fernandogm795@gmail.com</a></p>
+          <p>Gmail del diario: <a href="mailto:diario.laisla@gmail.com">diario.laisla@gmail.com</a></p>
+
+          <h3 class="section__title">Contacto rápido</h3>
+          <p>¿Querés escribirnos? Usá los correos arriba o enviá un mensaje por nuestras redes sociales.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <div>
+          <p>© 2025 Diario La Isla. Todos los derechos reservados.</p>
+          <p class="footer__small">Proyecto académico de Diseño UX/UI · Autor: Fernando Emilio Gómez</p>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
